@@ -4,10 +4,6 @@
 ## HilliardxGA06493-13LE6 RIL population
 *Linkage Map Construction and QTL Analysis*
 
-Input genotypic SNP data file:
-
-**SunRILs_2021_UX1992_RILs_filt.vcf.gz**
-
 
 Allele definitions:
 
@@ -16,17 +12,22 @@ Allele definitions:
 'GA06493-13LE6' coded as parent B
 
 
+Input genotypic SNP data file:
+**SunRILs_2021_UX1992_RILs_filt.vcf.gz**
+
+
 ### Linkage map construction 
 
 A genetic linkage map was constructed from 332 RIL individuals using R packages:
 
 *qtl version 1.48.1*
-*magrittr version 2.0.1*
+
 *ASMap version 1.0.4*
 
-as described in R code file:
 
+as described in R code file:
 **HilliardxGA_RIL_GeneticMap-Lite-2023-Final.R**
+
 
 
 Linkage map QC
@@ -34,7 +35,6 @@ Linkage map QC
 Before finalizing the linkage map, dot plots of each linkage group were constructed for quality control purposes.
 
 semifinal dotplot file name:
-
 UX1992-HilliardxGA-Miller-linkagemap-dotplots-semifinal.jpg or pdf
 
 3 outliers were idenfied visually from these dot plots, on chromosomes 1A and 1B, and were removed from the final map.
@@ -64,9 +64,11 @@ HG RIL Population Input Phenotypic Data Files:
 Calculation of phenotypic means among genotype replicates within an environment was done using a mixed model with R packages:
 
 *lme4 version 1.1.35.2*
+
 *emmeans version 1.10.1.90001*
 
 As described in R code file: 
+
 **emmeans_GHpop.R**
 
 
@@ -76,10 +78,11 @@ As described in R code file:
 QTL mapping was done using phenotypic data for 205 individuals in Raleigh, NC and 189 individuals in Kinston, NC using R packages:
 
 *qtl version 1.66*
-*magrittr version 2.0.1*
+
 *ASMap version 1.0.7*
 
 As described in R code file: 
+
 **HG_wax_QTL_mapping.R**
 
 
@@ -100,8 +103,9 @@ Allele definitions:
 A genetic linkage map was constructed from 293 RIL individuals using R packages:
 
 *qtl version 1.48.1*
-*magrittr version 2.0.1*
+
 *ASMap version 1.0.4*
+
 
 as described in R code file:
 
@@ -129,17 +133,22 @@ dot plot of final linkage map:
 ### Phenotypic Means
 
 Raw Input Phenotypic Data Files:
-R20_LA_allwax_wparents.csv
+
+
 **R20_LA_allwax_wparents.csv** # Raleigh 2020 raw
 
+
 **R21_T26-T34_LA_alltrts_wparents.csv** # Raleigh 2021 raw
+
 
 Calculation of phenotypic means among genotype replicates within an environment was done using a mixed model with R packages:
 
 *lme4 version 1.1.35.2*
+
 *emmeans version 1.10.1.90001*
 
 As described in R code file: 
+
 **emmeans_LApop.R**
 
 
@@ -149,10 +158,13 @@ As described in R code file:
 QTL mapping was done using R packages:
 
 *qtl version 1.66*
-*magrittr version 2.0.1*
+
+
 *ASMap version 1.0.7*
 
+
 As described in R code file:
+
 **LA_wax_QTLmapping.R**
 
 
