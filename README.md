@@ -61,7 +61,7 @@ HG RIL Population Input Phenotypic Data Files:
 **K21-WaxExp_T6-T10_final_DMM_HGpop_Rready.csv** # Kinston 2021
 
 
-Calculation of phenotypic means among genotype replicates within an environment was done using a mixed model with R packages:
+Calculation of phenotypic means was done using a mixed model with R packages:
 
 *lme4 version 1.1.35.2*
 
@@ -141,7 +141,7 @@ Raw Input Phenotypic Data Files:
 **R21_T26-T34_LA_alltrts_wparents.csv** # Raleigh 2021 raw
 
 
-Calculation of phenotypic means among genotype replicates within an environment was done using a mixed model with R packages:
+Calculation of phenotypic means was done using a mixed model with R packages:
 
 *lme4 version 1.1.35.2*
 
@@ -168,6 +168,26 @@ As described in R code file:
 **LA_wax_QTLmapping.R**
 
 
+## Genome-wide Association Study
 
+A Genome-wide association study (GWAS) for leaf and spike glaucousness traits was done using public breedling lines from 2020 field nurseries. The GWAS panel was grown in Raleigh, North Carolina in the 2020 and 2021 growing seasons. Raw phenotypic data is given for each year in the following files:
 
+**GWAS_Raleigh2020_wax.csv**
+
+**GWAS_Raleigh2021_wax.csv**
+
+The raw genotypic data is given in file:
+**2020_GAWN_SUNWHEAT_MDXN_6ST_postimp.filt.vcf.gz**
+
+Calculation of phenotypic means was done using a mixed model with R packages:
+
+*lme4 version 1.1.35.2*
+
+*emmeans version 1.10.1.90001*
+
+As described in R code file: 
+**GWAS_emmeans.R**
+
+The resulting phenotypic means were combined in a single file for further analysis:
+**waxtrt_emmeans_GWAS_combenv.csv**
 
