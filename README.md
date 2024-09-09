@@ -191,3 +191,13 @@ As described in R code file:
 The resulting phenotypic means were combined in a single file for further analysis:
 **waxtrt_emmeans_GWAS_combenv.csv**
 
+The code to run the GWAS is given in:
+**GWAS_wax.R**
+
+P-value results for each SNP using a FarmCPU model are reported for both traits in files:
+
+**WaxLeaf_Years.FarmCPU.csv**
+
+**WaxSpike_Years.FarmCPU.csv**
+
+The reported chromosome and positions for each SNP are based on the reference genome 'Chinese Spring' RefSeq v1.0. 
